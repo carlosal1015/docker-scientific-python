@@ -36,7 +36,7 @@ RUN set -ex; \
     if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi; \
     apk add --no-cache --virtual=.build-deps ${BUILD_PKGS}; \
     pip install -U --no-cache-dir ${PIP_PKGS}; \
-    apk del .build-deps; \
+    # apk del .build-deps; \
     rm /usr/include/xlocale.h; \
     rm -rf /root/.cache; \
     rm -rf /root/.[acpw]*; \

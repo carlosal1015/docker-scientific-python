@@ -14,20 +14,14 @@ This is a docker image that contains the following modules:
 - [`NumPy 1.18.1`](https://numpy.org/)
 - [`Pandas 1.0.1`](https://pandas.pydata.org/)
 - [`Matplotlib 3.1.3`](https://matplotlib.org/)
-- [`Jupyter Notebook`](https://jupyter.org/)
-
-... To confirm
-jupyter core     : 4.6.3
-jupyter-notebook : 6.0.3
-qtconsole        : not installed
-ipython          : 7.13.0
-ipykernel        : 5.1.4
-jupyter client   : 5.3.4
-jupyter lab      : 2.0.0
-nbconvert        : 5.6.1
-ipywidgets       : 7.5.1
-nbformat         : 4.4.0
-traitlets        : 4.3.3
+- [`Jupyter Notebook 6.0.3`](https://jupyter.org/)
+- [IPython `7.13.0`](https://ipython.org/)
+- [`nbformat 5.0.4`](https://nbformat.readthedocs.io/en/latest/)
+- [`jupyter-core 4.6.3`](https://jupyter-core.readthedocs.io/en/latest/)
+- [`ipykernel 5.1.4`](https://github.com/ipython/ipykernel)
+- [`ipywidgets 7.5.1`](https://ipywidgets.readthedocs.io/en/latest/)
+- [`nbconvert 5.6.1`](https://nbconvert.readthedocs.io/en/latest/)
+- [`traitlets 4.3.3`](https://traitlets.readthedocs.io/en/stable/)
 
 ## Running the container
 
@@ -44,4 +38,4 @@ docker run -it --name scientific-python \
            carlosal1015/docker-scientific-python
 ```
 
-Enjoy :smile:
+Open [localhost:8888](http://localhost:8888) and enjoy :smile:
