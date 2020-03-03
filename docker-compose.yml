@@ -3,7 +3,7 @@ version: '3'
 services:
   notebook:
     container_name: notebook
-    image: carlosal1015/docker-scientific-python
+    image: carlosal1015/docker-scientific-python:latest
     ports:
       - 8888:8888
     volumes:
