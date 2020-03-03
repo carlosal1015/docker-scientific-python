@@ -24,7 +24,7 @@ docker-compuse up -d
 or
 
 ```sh
-docker run -it --name machine-learning \
+docker run -it --name scientific-python \
            -v $(PWD):/notebooks \
            -p 8888:8888 -d \
            carlosal1015/docker-scientific-python

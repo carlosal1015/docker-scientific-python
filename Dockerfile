@@ -18,7 +18,7 @@ ENV MAIN_PKGS="\
         build-base linux-headers python3-dev py3-setuptools git cmake jpeg-dev \
         libffi-dev gfortran openblas-dev py3-numpy-dev freetype-dev libpng-dev libexecinfo-dev" \
     PIP_PKGS="\
-        pandas matplotlib ipywidgets notebook" \
+        pandas matplotlib ipywidgets notebook requests" \
     CONF_DIR="~/.ipython/profile_default/startup"
 
 RUN set -ex; \
@@ -36,8 +36,8 @@ RUN set -ex; \
     if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi; \
     apk add --no-cache --virtual=.build-deps ${BUILD_PKGS}; \
     pip install -U --no-cache-dir ${PIP_PKGS}; \
-    apk del .build-deps; \
-    rm /usr/include/xlocale.h; \
+    # apk del .build-deps; \
+    # rm /usr/include/xlocale.h; \
     rm -rf /root/.cache; \
     rm -rf /root/.[acpw]*; \
     rm -rf /var/cache/apk/*; \
