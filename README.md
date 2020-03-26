@@ -15,7 +15,7 @@ This is a docker image that contains the following modules:
 - [`Pandas 1.0.1`](https://pandas.pydata.org/)
 - [`Matplotlib 3.1.3`](https://matplotlib.org/)
 - [`Jupyter Notebook 6.0.3`](https://jupyter.org/)
-- [IPython `7.13.0`](https://ipython.org/)
+- [`IPython `7.13.0`](https://ipython.org/)
 - [`nbformat 5.0.4`](https://nbformat.readthedocs.io/en/latest/)
 - [`jupyter-core 4.6.3`](https://jupyter-core.readthedocs.io/en/latest/)
 - [`ipykernel 5.1.4`](https://github.com/ipython/ipykernel)
@@ -28,7 +28,7 @@ This is a docker image that contains the following modules:
 ```sh
 git clone https://github.com/carlosal1015/docker-scientific-python.git
 cd docker-scientific-python
-docker-compuse up -d
+docker-compose up -d
 ```
 or
 ```sh
