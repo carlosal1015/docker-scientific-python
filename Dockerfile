@@ -1,24 +1,24 @@
-# Copyleft (c) 2020, Oromion
+# Copyleft (c) May, 2020, Oromion.
 
 FROM frolvlad/alpine-glibc
 
 LABEL maintainer="Oromion <caznaranl@uni.pe>" \
-      name="Scientific Python" \
-      description="Almost anything that you need for Scientific Python in a container." \
-      url="https://hub.docker.com/r/carlosal1015/docker-scientific-python" \
-      vcs-url="https://github.com/carlosal1015/docker-scientific-python" \
-      vendor="Oromion Aznarán" \
-      version="1.0"
+    name="Scientific Python" \
+    description="Almost anything that you need for Scientific Python in a container." \
+    url="https://hub.docker.com/r/carlosal1015/docker-scientific-python" \
+    vcs-url="https://github.com/carlosal1015/docker-scientific-python" \
+    vendor="Oromion Aznarán" \
+    version="1.1"
 
 ENV MAIN_PKGS="\
-        tini curl bash ca-certificates python3 py3-numpy \
-        py3-numpy-f2py freetype jpeg libpng libstdc++ \
-        libgomp graphviz font-noto openssl" \
+    tini curl bash ca-certificates python3 \
+    py3-numpy freetype jpeg libpng libstdc++ \
+    libgomp graphviz font-noto openssl" \
     BUILD_PKGS="\
-        build-base linux-headers python3-dev py3-setuptools git cmake jpeg-dev \
-        libffi-dev gfortran openblas-dev py3-numpy-dev freetype-dev libpng-dev libexecinfo-dev" \
+    build-base linux-headers python3-dev py3-setuptools git cmake jpeg-dev \
+    libffi-dev gfortran openblas-dev py3-numpy-dev freetype-dev libpng-dev libexecinfo-dev" \
     PIP_PKGS="\
-        pandas matplotlib ipywidgets notebook requests" \
+    pandas matplotlib ipywidgets notebook requests" \
     CONF_DIR="~/.ipython/profile_default/startup"
 
 RUN set -ex; \

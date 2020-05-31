@@ -1,9 +1,9 @@
-version: '3'
+version: "3"
 
 services:
   notebook:
     container_name: notebook
-    image: carlosal1015/docker-scientific-python:latest
+    image: carlosal1015/docker-scientific-python:v1.1
     ports:
       - 8888:8888
     volumes:
